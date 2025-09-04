@@ -21,97 +21,195 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="hero.css" />
+    <link rel="stylesheet" href="services.css" />
 
-
+    <!-- Font Awesome 6 CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- GSAP -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   </head>
   <body>
-   <!-- Header -->
-   <header id="header">
-    <div class="container">
-      <div class="nav-bar">
-        <div class="logo">Palmer</div>
-        <nav>
-          <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
+    <!-- Header -->
+    <header id="header">
+      <div class="container">
+        <div class="nav-bar">
+          <div class="logo">Trends Of Media</div>
+          <nav>
+            <ul class="nav-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
 
-        <!-- Menu Button (mobile) -->
-        <div class="menu-btn" id="menu-btn">
-          <span></span>
-          <span></span>
+          <!-- Menu Button (mobile) -->
+          <div class="menu-btn" id="menu-btn">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Fullscreen Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <button class="close-btn" id="close-btn">&times;</button>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Gradient overlay -->
+    <div class="gradient-overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-title">
+          <div class="text-container">
+            <div class="text-line">
+              <span class="rebel-line">REBEL</span>
+            </div>
+            <div class="text-line">
+              <span class="against-line">AGAINST</span>
+            </div>
+            <div class="text-line">
+              <span class="boring-line"
+                >B<span class="letter-o">O</span>RING</span
+              >
+            </div>
+
+            <!-- Video container that will be positioned over the O -->
+            <div class="video-container" id="video-o">
+              <video loop muted autoplay>
+                <source
+                  src="https://cdn.pixabay.com/video/2023/02/23/160456_800252729_mp4-720x720-30fps-25mb.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="intro-text">
+          <p>
+            We're a creative web design and branding agency that crafts
+            beautiful work for brands who <strong>refuse to blend in.</strong>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- End of Hero Section -->
+    <!-- Services -->
+
+    <div class="services">
+      <div class="bold-text">
+        <h1>OUR</h1>
+        <h1>SERVICES</h1>
+      </div>
+      <div class="wrapper">
+        <div class="box-area">
+          <div class="single-box">
+            <div class="icon">
+              <i class="fa-solid fa-chart-bar"></i>
+            </div>
+            <h2>Web development</h2>
+            <p>
+              We build responsive, modern websites tailored to your needs,
+              delivering a seamless user experience.
+            </p>
+          </div>
+          <div class="single-box">
+            <div class="icon">
+              <i class="fa fa-paint-brush"></i>
+            </div>
+            <h2>App development</h2>
+            <p>
+              Innovative mobile apps crafted to deliver seamless performance and
+              elevate user experience.
+            </p>
+          </div>
+          <div class="single-box">
+            <div class="icon">
+              <i class="fa fa-clipboard"></i>
+            </div>
+            <h2>Content creation</h2>
+            <p>
+              Engaging and impactful content designed to capture attention,
+              build trust, and boost your brand presence.
+            </p>
+          </div>
+        </div>
+        <div class="box-area">
+          <div class="single-box">
+            <div class="icon">
+              <i class="fa-brands fa-web-awesome"></i>
+            </div>
+            <h2>Branding</h2>
+            <p>
+              Creative strategies that define your identity, strengthen your
+              presence, and make your brand unforgettable.
+            </p>
+          </div>
+          <div class="single-box">
+            <div class="icon">
+              <i class="fa-solid fa-comments-dollar"></i>
+            </div>
+            <h2>Sales</h2>
+            <p>
+              Smart strategies that drive conversions, boost revenue, and
+              accelerate business growth.
+            </p>
+          </div>
+          <div class="single-box">
+            <div class="icon">
+              <i class="fa-solid fa-chart-simple"></i>
+              
+            </div>
+            <h2>Marketing</h2>
+            <p>
+              Data-driven campaigns designed to increase visibility, attract the
+              right audience, and amplify your brand’s reach.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </header>
 
-  <!-- Fullscreen Mobile Menu -->
-  <div class="mobile-menu" id="mobile-menu">
-    <button class="close-btn" id="close-btn">&times;</button>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </div>
+    <!-- About -->
+    <div class="about"></div>
 
-  <!-- Hero Section -->
-  <div class="cursor"></div>
-  <div class="cursor-follower"></div>
-  
-  <!-- Gradient overlay -->
-  <div class="gradient-overlay"></div>
-
-  <!-- Hero Section -->
-  <section class="hero">
-      <div class="container">
-          <div class="hero-title">
-              <div class="text-container">
-                  <div class="text-line">
-                      <span class="rebel-line">REBEL</span>
-                  </div>
-                  <div class="text-line">
-                      <span class="against-line">AGAINST</span>
-                  </div>
-                  <div class="text-line">
-                      <span class="boring-line">B<span class="letter-o">O</span>RING</span>
-                  </div>
-                  
-                  <!-- Video container that will be positioned over the O -->
-                  <div class="video-container" id="video-o">
-                      <video loop muted autoplay>
-                          <source src="https://cdn.pixabay.com/video/2023/02/23/160456_800252729_mp4-720x720-30fps-25mb.mp4" type="video/mp4">
-                      </video>
-                  </div>
-              </div>
-          </div>
-          
-          <div class="intro-text">
-              <p>We're a creative web design and branding agency that crafts beautiful work for brands who <strong>refuse to blend in.</strong></p>
-          </div>
-      </div>
-  </section>
+    <!-- Contact -->
+    <div class="contact"></div>
 
     <!-- Footer -->
     <footer>
-      <div class="container">
+      <div class="container mt-4">
         <div class="row">
-          <div class="col-lg-6 mb-4 ">
-            <div class="footer-logo ">
+          <div class="col-lg-6 mb-4">
+            <div class="footer-logo">
               <h1>Trends Of Media</h1>
               <p>
-              Driving success for brands through creative marketing and smart
-              digital solutions.
-            </p>
+                Driving success for brands through creative marketing and smart
+                digital solutions.
+              </p>
             </div>
-            
+
             <div class="social-icons">
               <a href="#"><i class="bi bi-facebook"></i></a>
               <a href="#"><i class="bi bi-twitter"></i></a>
@@ -140,19 +238,10 @@
           <div class="col-lg-2 col-md-6 mb-3">
             <h5 class="mb-3">Get in touch</h5>
             <ul class="footer-links">
-              <li><a href="#">+91 8899895621</a><br>
-                </li>
+              <li><a href="#">+91 8899895621</a><br /></li>
               <li><a href="#">trendsofmedia2025@gmail.com</a></li>
             </ul>
           </div>
-          <!-- <div class="col-lg-2 col-md-6 mb-4">
-                    <h5 class="mb-3">Legal</h5>
-                    <ul class="footer-links">
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Cookie Policy</a></li>
-                    </ul>
-                </div> -->
         </div>
         <div class="copyright">
           <p>&copy; 2025 Trends Of Media - All rights reserved.</p>
@@ -160,90 +249,6 @@
       </div>
     </footer>
 
-    <!-- <footer class="bg-dark text-white pt-5 pb-4">
-      <div class="container text-center text-md-left">
-        <div class="row text-center text-md-left">
-          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-            <img src="assets/logo.png" class="w-50" />
-            <p>
-              Driving success for brands through creative marketing and smart
-              digital solutions.
-            </p>
-          </div>
-          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
-              useful links
-            </h5>
-            <p>
-              <a href="#" class="text-white" style="text-decoration: none"
-                >Home</a
-              >
-            </p>
-            <p>
-              <a href="#" class="text-white" style="text-decoration: none"
-                >About</a
-              >
-            </p>
-            <p>
-              <a href="#" class="text-white" style="text-decoration: none"
-                >Our Work</a
-              >
-            </p>
-            <p>
-              <a href="#" class="text-white" style="text-decoration: none"
-                >Contact</a
-              >
-            </p>
-          </div>
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
-              our services
-            </h5>
-            <p>
-              <a href="#" class="text-white" style="text-decoration: none"
-                >Web Development</a
-              >
-            </p>
-            <p>
-              <a href="#" class="text-white" style="text-decoration: none"
-                >Content creation</a
-              >
-            </p>
-            <p>
-              <a href="#" class="text-white" style="text-decoration: none"
-                >Branding</a
-              >
-            </p>
-            <p>
-              <a href="#" class="text-white" style="text-decoration: none"
-                >Sales</a
-              >
-            </p>
-          </div>
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
-              our services
-            </h5>
-            <p>
-              <i class="fas fa-home mr-3"></i>NEWYORK, NY 2333, US
-              
-            </p>
-            <p>
-              <i class="fas fa-home mr-3"></i>trendsofmedia2025@gmail.com
-              
-            </p>
-            <p>
-              <i class="fas fa-home mr-3"></i>+91 9956898989
-              
-            </p>
-            <p>
-              <i class="fas fa-home mr-3"></i>+02 335 231 88
-              
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer> -->
     <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
