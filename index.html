@@ -33,6 +33,9 @@
     />
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    
+
   </head>
   <body>
     <!-- Header -->
@@ -72,47 +75,40 @@
     <!-- Hero Section -->
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
-
-    <!-- Gradient overlay -->
     <div class="gradient-overlay"></div>
 
-    <!-- Hero Section -->
     <section class="hero">
       <div class="container">
-        <div class="hero-title">
-          <div class="text-container">
-            <div class="text-line">
-              <span class="rebel-line">REBEL</span>
-            </div>
-            <div class="text-line">
-              <span class="against-line">AGAINST</span>
-            </div>
-            <div class="text-line">
-              <span class="boring-line"
-                >B<span class="letter-o">O</span>RING</span
-              >
-            </div>
+          <div class="hero-title">
+              <div class="text-container">
+                  <div class="text-line">
+                      <span class="rebel-line split-text" data-text="REBEL">REBEL</span>
+                  </div>
+                  <div class="text-line">
+                      <span class="against-line split-text" data-text="AGAINST">AGAINST</span>
+                  </div>
+                  <div class="text-line">
+                      <span class="boring-line split-text" data-text="BORING">B<span class="letter-o">O</span>RING</span>
+                  </div>
 
-            <!-- Video container that will be positioned over the O -->
-            <div class="video-container" id="video-o">
-              <video loop muted autoplay>
-                <source
-                  src="https://cdn.pixabay.com/video/2023/02/23/160456_800252729_mp4-720x720-30fps-25mb.mp4"
-                  type="video/mp4"
-                />
-              </video>
-            </div>
+                  <!-- Video container that will be positioned over the O -->
+                  <div class="video-container" id="video-o">
+                      <video loop muted preload="auto">
+                          <source src="./viedo/market.mp4" type="video/mp4">
+                      </video>
+                  </div>
+              </div>
           </div>
-        </div>
 
-        <div class="intro-text">
-          <p>
-            We're a creative web design and branding agency that crafts
-            beautiful work for brands who <strong>refuse to blend in.</strong>
-          </p>
-        </div>
+          <div class="intro-text">
+              <p>
+                  We're a creative web design and branding agency that crafts
+                  beautiful work for brands who <strong>refuse to blend in.</strong>
+              </p>
+          </div>
       </div>
-    </section>
+  </section>
+
 
     <!-- End of Hero Section -->
     <!-- Services -->
